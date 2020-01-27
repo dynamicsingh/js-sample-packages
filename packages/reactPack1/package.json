@@ -1,12 +1,13 @@
 {
   "name": "@dynamicsingh/reactpack1",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
-  "module": "lib/index.js",
+  "main": "lib/index",
+  "module": "lib/index",
+  "typings": "dist/index",
   "scripts": {
     "build": "rm -rf lib && babel src -d lib",
     "build:watch": "yarn build -- --watch"
