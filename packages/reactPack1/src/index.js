@@ -5,14 +5,18 @@ const reactPack1 = ({firstName, lastName, age}) => {
    return (<div>{firstName} : {lastName} : {age}</div>);
 };
 
-reactPack1.defaultProps = {
+export const defaultProps = {
     lastName: ""
 };
 
-reactPack1.propTypes = {
+export const propTypes = {
     firstName: PropTypes.string.isRequired,
     lastName: PropTypes.string,
     age: PropTypes.number.isRequired
 };
+
+reactPack1.defaultProps = defaultProps;
+
+reactPack1.propTypes = propTypes;
 
 export default reactPack1;
